@@ -1,2 +1,2 @@
 # aws
-aws code samples
+This is to learn DBT
