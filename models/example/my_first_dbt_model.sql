@@ -7,13 +7,11 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+{{ config(materialized='view') }}
 
 with source_data as (
 
-    select 1 as id
-    union all
-    select null as id
+select * from FOODEXPRESS.public.FOODEXPRESS_INFO limit 1
 
 )
 
@@ -25,3 +23,4 @@ from source_data
 */
 
 -- where id is not null
+
